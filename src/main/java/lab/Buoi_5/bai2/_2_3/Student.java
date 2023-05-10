@@ -24,11 +24,6 @@ class Student implements Comparable<Student>{
     }
 
     @Override
-    public int hashCode() {
-        return Objects.hash(code, name, score);
-    }
-
-    @Override
     public String toString() {
         return "Student{" +
                 "code='" + code + '\'' +

@@ -11,7 +11,7 @@ public class ConnectToMySQL_CreateTable {
             System.err.print("ClassNotFoundException: ");
         }      
         try {
-            con = DriverManager.getConnection(urlMySQL,"root","root");//ket noi
+            con = DriverManager.getConnection(urlMySQL,"root","12345678");//ket noi
 
         } catch(SQLException ex) {
             System.err.println("SQLException: " + ex.getMessage());

@@ -26,5 +26,12 @@ public class App {
 
         Student stY = new Student("A063138", "AB", 9);
         System.out.println(ts1.contains(stY));
+
+        /*
+            ts1.contains(stY)
+
+            1. contains trong TreeSet sẽ dựa vào compare và equals
+                   - nếu compare == 0  so sánh tiếp bằng equals
+         */
     }
 }

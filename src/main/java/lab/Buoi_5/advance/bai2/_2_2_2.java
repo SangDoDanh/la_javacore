@@ -92,14 +92,16 @@ public class _2_2_2 {
         Map<Supplier, Double> totalMap = new HashMap<>();
         double max = 0;
         double total = 0;
-        for (Map.Entry<Supplier, Map<Purchase, List<PurchaseDetail>>> entryCus : supplierMapMap.entrySet()) {
-            for (Map.Entry<Purchase, List<PurchaseDetail>> entryOrder : entryCus.getValue().entrySet()) {
-                for (PurchaseDetail od : entryOrder.getValue()) {
+        for (Supplier supplier  : supplierMapMap.keySet()) { // suppliers
+            for (Purchase purchase : supplierMapMap.get(supplier).keySet()) { // purchases
+                for (PurchaseDetail od : supplierMapMap.get(supplier).get(purchase)) { // PurchaseDetails
                     total += (od.getAmount() * od.getPrice());
                 }
             }
             max = Math.max(max, total);
-            totalMap.put(entryCus.getKey(), total);
+            if (total > max)
+                totalMap.put(supplier, total);
+
             total = 0;
         }
         totalMap.put(null, max);
@@ -119,25 +121,21 @@ public class _2_2_2 {
         return totalMap;
     }
 
-    // Thực hành tìm kiếmCác đơn nhập hàng theo mã nhà cung cấp
+    // Thực hành tìm kiếm Các đơn nhập hàng theo mã nhà cung cấp
     public static void searPurchaseBySupplierId(String susId) {
 
         if (supplierMapMap.isEmpty())
             System.out.println("Danh sach trong");
         else {
-            Set<Purchase> purchaseSet = new HashSet<>();
+            Supplier supplier = new Supplier("cus1", "Nguyen A", "HN", "222222");
+            Purchase purchase = new Purchase(1, LocalDate.now(), "cus1");
+            List<PurchaseDetail> purchaseDetails = supplierMapMap.get(supplier).get(purchase);
 
-            for (Map.Entry<Supplier, Map<Purchase, List<PurchaseDetail>>> entryCus : supplierMapMap.entrySet()) {
-                if (susId.equals(entryCus.getKey().getIdSup())) {
-                    purchaseSet = entryCus.getValue().keySet();
-                }
-            }
-
-            if (purchaseSet.isEmpty()) {
+            if (purchaseDetails.isEmpty()) {
                 System.out.println("Danh sach trong");
             } else {
-                for (Purchase purchase : purchaseSet) {
-                    System.out.println(purchase);
+                for (PurchaseDetail pd : purchaseDetails) {
+                    System.out.println(pd);
                 }
             }
         }

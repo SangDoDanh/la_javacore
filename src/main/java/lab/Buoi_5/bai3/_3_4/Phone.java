@@ -58,9 +58,4 @@ public class Phone implements Comparable<Phone>{
         Phone phone = (Phone) o;
         return id == phone.id && Double.compare(phone.price, price) == 0 && Objects.equals(name, phone.name);
     }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(id, price, name);
-    }
 }

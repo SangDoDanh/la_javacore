@@ -85,5 +85,13 @@ public class Employee {
         Employee employee = new Employee("Bill", "Joy", dateFormat.parse("2009-01-31"));
         Boolean b = setEmps.contains(employee);
 
+        /*
+            Boolean b = setEmps.contains(employee);
+
+            1. contains trong HashSet sẽ kiểm tra hashcode của các phần tủ
+                   - nếu trùng -> so sánh bằng equals
+                   - không trùng return flase
+         */
+
     }
 }

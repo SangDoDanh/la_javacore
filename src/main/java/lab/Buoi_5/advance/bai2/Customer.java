@@ -11,6 +11,10 @@ public class Customer implements Comparable<Customer>{
     public Customer() {
     }
 
+    public Customer(String idCus) {
+        IdCus = idCus;
+    }
+
     public Customer(String idCus, String name, String address, String tel) {
         IdCus = idCus;
         Name = name;
@@ -23,7 +27,7 @@ public class Customer implements Comparable<Customer>{
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Customer customer = (Customer) o;
-        return Objects.equals(IdCus, customer.IdCus) && Objects.equals(Name, customer.Name) && Objects.equals(Address, customer.Address) && Objects.equals(Tel, customer.Tel);
+        return Objects.equals(IdCus, customer.IdCus);
     }
 
     @Override

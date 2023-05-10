@@ -91,14 +91,16 @@ public class _2_2_1 {
         Map<Customer, Double> totalMap = new HashMap<>();
         double max = 0;
         double total = 0;
-        for (Map.Entry<Customer, Map<Order, List<OrderDetail>>> entryCus : customerMapMap.entrySet()) {
-            for (Map.Entry<Order, List<OrderDetail>> entryOrder : entryCus.getValue().entrySet()) {
-                for (OrderDetail od : entryOrder.getValue()) {
+
+        for (Customer c  : customerMapMap.keySet()) { // customer
+            for (Order o : customerMapMap.get(c).keySet()) { // order
+                for (OrderDetail od : customerMapMap.get(c).get(o)) { // orderDetail
                     total += (od.getAmount() * od.getPrice());
                 }
             }
             max = Math.max(max, total);
-            totalMap.put(entryCus.getKey(), total);
+            if (total > max)
+                totalMap.put(c, total);
             total = 0;
         }
         totalMap.put(null, max);
@@ -106,16 +108,17 @@ public class _2_2_1 {
     }
 
     public static Map<Customer, Integer> countOrderByCustomer() {
-        Map<Customer, Integer> totalMap = new HashMap<>();
+        Map<Customer, Integer> coutMap = new HashMap<>();
         int max = 0;
-        int total;
+        int count;
         for (Map.Entry<Customer, Map<Order, List<OrderDetail>>> entryCus : customerMapMap.entrySet()) {
-            total = entryCus.getValue().size();
-            max = Math.max(max, total);
-            totalMap.put(entryCus.getKey(), total);
+            count = entryCus.getValue().size();
+            max = Math.max(max, count);
+            if (count == max && max > 0)
+                coutMap.put(entryCus.getKey(), count);
         }
-        totalMap.put(null, max);
-        return totalMap;
+        coutMap.put(null, max);
+        return coutMap;
     }
 
     // Thực hành tìm kiếm danh sách hoá đơn theo mã khách hàng
@@ -124,19 +127,15 @@ public class _2_2_1 {
         if (customerMapMap.isEmpty())
             System.out.println("Danh sach trong");
         else {
-            Set<Order> orderSet = new HashSet<>();
+            Customer customer = new Customer("cus1", "Nguyen A", "HN", "222222");
+            Order orders = new Order(1, LocalDate.now(), "cus1");
+            List<OrderDetail> orderDetails = customerMapMap.get(customer).get(orders);
 
-            for (Map.Entry<Customer, Map<Order, List<OrderDetail>>> entryCus : customerMapMap.entrySet()) {
-                if (cusId.equals(entryCus.getKey().getIdCus())) {
-                    orderSet = entryCus.getValue().keySet();
-                }
-            }
-
-            if (orderSet.isEmpty()) {
+            if (orderDetails.isEmpty()) {
                 System.out.println("Danh sach trong");
             } else {
-                for (Order order : orderSet) {
-                    System.out.println(order);
+                for (OrderDetail od : orderDetails) {
+                    System.out.println(od);
                 }
             }
         }

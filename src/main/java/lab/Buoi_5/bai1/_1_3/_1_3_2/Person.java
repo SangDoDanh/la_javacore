@@ -14,14 +14,11 @@ public class Person implements Comparable<Person>{
     }
     // các phương thức set, get, toString, ….
 
-
     @Override
     public String toString() {
-        return "Person{" +
-                "firstName='" + firstName + '\'' +
+        return "{firstName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +
-                ", joinDate=" + joinDate +
-                '}';
+                ", joinDate=" + joinDate + "}";
     }
 
     @Override
