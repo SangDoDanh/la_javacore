@@ -1,0 +1,6 @@
+
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¾Şìšøÿÿÿÿ
+e	java:S116"PRename this field "IdCus" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¥Şèò
+i	java:S116"ORename this field "Name" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(É¬­Áøÿÿÿÿ
+g	java:S116"RRename this field "Address" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(÷Ü©
+h	java:S116	"NRename this field "Tel" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ü÷è‰øÿÿÿÿ
