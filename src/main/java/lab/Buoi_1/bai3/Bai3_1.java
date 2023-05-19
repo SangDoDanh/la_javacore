@@ -6,7 +6,7 @@ public class Bai3_1 {
     public static Integer[] inTatCaDayConTangDanKemViTri(int[] arr) {
         int arrLength = arr.length;
 
-        Integer[] startEnds = new Integer[arrLength + 1];
+        Integer[] startEnds = new Integer[arrLength];
         int index = 0;
         int indexTmp = -1;
         int max = 0;
@@ -18,6 +18,8 @@ public class Bai3_1 {
 
             if (indexTmp > -1 && max > maxTmp) {
                maxTmp = max;
+               startEnds = new Integer[arrLength];
+               startEnds[index] = i;
             }
             if (i < arrLength - 1) {
                 if (arr[i + 1] < arr[i]) {
@@ -27,23 +29,19 @@ public class Bai3_1 {
                 }
             }
         }
-        startEnds[arrLength] = max;
         System.out.println(max);
         return startEnds;
     }
 
     public static void main(String[] args) {
-        int[] arr = {5, 3, 7, 8, 9, 4, 6, 8, 36, 4, 6, 8, 36, 45};
+        int[] arr = {5, 3, 7, 8, 9, 34, 6, 8, 36, 4, 6, 8, 36, 45, 4, 6, 8, 36, 45, 55};
         Integer[] result = inTatCaDayConTangDanKemViTri(arr);
         int rsLength = result.length;
 
-        for(int i = 0; i < rsLength - 2; i++) {
+        for(int i = 0; i < rsLength ; i++) {
             if(result[i] != null) {
-                int max = result[i] - i + 1;
-                if( max == result[rsLength-1]) {
-                    System.out.println("Start: " + i);
-                    System.out.println(Arrays.toString(Arrays.copyOfRange(arr, i, result[i] + 1)));
-                }
+                System.out.println("Start: " + i);
+                System.out.println(Arrays.toString(Arrays.copyOfRange(arr, i, result[i] + 1)));
             }
         }
     }
