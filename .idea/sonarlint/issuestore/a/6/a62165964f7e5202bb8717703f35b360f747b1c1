@@ -1,0 +1,12 @@
+
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(æà˜Ì
+j
+java:S2095"OUse try-with-resources or close this "CallableStatement" in a "finally" clause.(º€ªùÿÿÿÿ
+C
+java:S4925"-Remove this "Class.forName()", it is useless.(æêùğ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(Öîø¥
+7
+java:S1116"Remove this empty statement.(Åñ­õşÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(¾Ä”şÿÿÿÿ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(‹ñõ’
+N	java:S106%"9Replace this use of System.out or System.err by a logger.(ÆÀûı

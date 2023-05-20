@@ -1,0 +1,45 @@
+
+x
+java:S1192!"VDefine a constant instead of duplicating this literal "Total rows in table: " 3 times.(ËÛİîıÿÿÿÿ8®À¡¤ƒ1
+b	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(óîªŒ
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¹¡ë„üÿÿÿÿ
+c
+java:S2095"HUse try-with-resources or close this "JdbcRowSet" in a "finally" clause.(¸šß·üÿÿÿÿ
+[
+java:S1124
+"EReorder the modifiers to comply with the Java Language Specification.(×Öì
+`
+java:S1124"EReorder the modifiers to comply with the Java Language Specification.(“ÂÓÏùÿÿÿÿ
+`
+java:S1124"EReorder the modifiers to comply with the Java Language Specification.(áğÛ­úÿÿÿÿ
+`
+java:S1124"EReorder the modifiers to comply with the Java Language Specification.(—Êşÿÿÿÿ
+`
+java:S1124"EReorder the modifiers to comply with the Java Language Specification.(õ›‡şÿÿÿÿ
+[
+java:S1124"EReorder the modifiers to comply with the Java Language Specification.(»©Îã
+b
+java:S1124"EReorder the modifiers to comply with the Java Language Specification.(ÀØªş8ÏÓŸ¤ƒ1
+b
+java:S1124"EReorder the modifiers to comply with the Java Language Specification.(ÊØ×ô8ÑÓŸ¤ƒ1
+g
+java:S1124"EReorder the modifiers to comply with the Java Language Specification.(×£¯ıÿÿÿÿ8ÓÓŸ¤ƒ1
+Z	java:S106!"9Replace this use of System.out or System.err by a logger.(ËÛİîıÿÿÿÿ8ƒîš¤ƒ1
+U	java:S106*"9Replace this use of System.out or System.err by a logger.(Ã˜âä8ó¤ƒ1
+U	java:S1060"9Replace this use of System.out or System.err by a logger.(œÙùõ8ó¤ƒ1
+X
+java:S1854="6Remove this useless assignment to local variable "s2".(ÄÑÏÇøÿÿÿÿ8°×¤ƒ1
+R
+java:S1854<"6Remove this useless assignment to local variable "s1".(è«Ò_8°×¤ƒ1
+Z	java:S1065"9Replace this use of System.out or System.err by a logger.(æ¾¢¼ÿÿÿÿÿ8±×¤ƒ1
+C
+java:S1481<"'Remove this unused "s1" local variable.(è«Ò_8²×¤ƒ1
+I
+java:S1481="'Remove this unused "s2" local variable.(ÄÑÏÇøÿÿÿÿ8³×¤ƒ1
+Z	java:S106>"9Replace this use of System.out or System.err by a logger.(ÎÁµÿÿÿÿÿ8´×¤ƒ1
+Z	java:S106@"9Replace this use of System.out or System.err by a logger.(ËÛİîıÿÿÿÿ8´×¤ƒ1
+Z	java:S106D"9Replace this use of System.out or System.err by a logger.(Ï¹ÏŸÿÿÿÿÿ8éë ¤ƒ1
+U	java:S106H"9Replace this use of System.out or System.err by a logger.(Œ¶©–8êë ¤ƒ1
+Z	java:S106O"9Replace this use of System.out or System.err by a logger.(ëğ¾Áüÿÿÿÿ8êë ¤ƒ1
+U	java:S106V"9Replace this use of System.out or System.err by a logger.(û÷–î8ÓÀ¡¤ƒ1
+Z	java:S106Z"9Replace this use of System.out or System.err by a logger.(ËÛİîıÿÿÿÿ8ÓÀ¡¤ƒ1

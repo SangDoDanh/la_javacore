@@ -1,0 +1,30 @@
+
+g	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(Úàÿÿÿÿÿ
+b
+java:S2095$"GUse try-with-resources or close this "Statement" in a "finally" clause.(üÆã¡üÿÿÿÿ
+j
+java:S2095C"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(ùÑÏ¯ùÿÿÿÿ
+d
+java:S2095,"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(¬ÔŒ
+j
+java:S2095e"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(ùÑÏ¯ùÿÿÿÿ
+j
+java:S2095V"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(ùÑÏ¯ùÿÿÿÿ
+V
+java:S1854"@Remove this useless assignment to local variable "createString".(ß éÔ
+E
+java:S1197"*Move the array designators [] to the type.(™€æùÿÿÿÿ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(Öîø¥
+L
+java:S6437"6Revoke and change this password, as it is compromised.(½Ë¦¡
+M	java:S106"9Replace this use of System.out or System.err by a logger.(®¾¨5
+N	java:S106"9Replace this use of System.out or System.err by a logger.(‚¶ƒš
+L
+java:S1481"1Remove this unused "createString" local variable.(ªû‘–şÿÿÿÿ
+V	java:S125"<This block of commented-out lines of code should be removed.(Õ¥Œ’ÿÿÿÿÿ
+c	java:S100!"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‹ì£·
+h	java:S100("NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(îÙ™’ÿÿÿÿÿ
+h	java:S100?"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(†ğìÖÿÿÿÿÿ
+S	java:S106I"9Replace this use of System.out or System.err by a logger.(Ñè‚úÿÿÿÿ
+h	java:S100R"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(–ªå›ÿÿÿÿÿ
+h	java:S100a"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Àß·ƒûÿÿÿÿ

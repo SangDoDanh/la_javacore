@@ -7,9 +7,9 @@ public class OrderDetail {
     private int IdDetail;// mã hoá đơn chi tiết
     private int ItemID;// mã hàng
     private int Amount;// số lượng hàng
-    private float Price; //đơn giá
+    private double Price; //đơn giá
 
-    public OrderDetail(int idOrder, int idDetail, int itemID, int amount, float price) {
+    public OrderDetail(int idOrder, int idDetail, int itemID, int amount, double price) {
         IdOrder = idOrder;
         IdDetail = idDetail;
         ItemID = itemID;
@@ -22,12 +22,12 @@ public class OrderDetail {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         OrderDetail that = (OrderDetail) o;
-        return IdOrder == that.IdOrder && IdDetail == that.IdDetail && ItemID == that.ItemID && Amount == that.Amount && Float.compare(that.Price, Price) == 0;
+        return IdOrder == that.IdOrder && IdDetail == that.IdDetail && ItemID == that.ItemID && Amount == that.Amount && Double.compare(that.Price, Price) == 0;
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(IdOrder, IdDetail, ItemID, Amount, Price);
+        return Objects.hash(IdOrder, IdDetail, ItemID);
     }
 
     @Override
@@ -73,11 +73,11 @@ public class OrderDetail {
         Amount = amount;
     }
 
-    public float getPrice() {
+    public double getPrice() {
         return Price;
     }
 
-    public void setPrice(float price) {
+    public void setPrice(double price) {
         Price = price;
     }
 }
